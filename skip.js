@@ -9,7 +9,7 @@ setInterval(
       {
         if($(filter, nextpage.document).attr(linkattr))
         {
-          other = window.open($(filter, nextpage.document).attr(linkattr))
+          var other = window.open($(filter, nextpage.document).attr(linkattr))
           other.onload = nextpage.onload
         }
       }
