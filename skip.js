@@ -5,12 +5,12 @@ var nextpage = window.open($(filter).attr(linkattr))
 setInterval(
     function() 
     { 
-      if( $(filter, other.document))
+      if( $(filter, nextpage.document))
       {
-        if($(filter, other.document).attr(linkattr))
+        if($(filter, nextpage.document).attr(linkattr))
         {
-          other = window.open($(filter, other.document).attr(linkattr))
-          other2.onload = other.onload
+          other = window.open($(filter, nextpage.document).attr(linkattr))
+          other.onload = nextpage.onload
         }
       }
     },
