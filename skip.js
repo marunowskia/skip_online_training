@@ -11,6 +11,7 @@ setInterval(
         {
           var other = window.open($(filter, nextpage.document).attr(linkattr))
           other.onload = nextpage.onload
+          nextpage=other
         }
       }
     },
